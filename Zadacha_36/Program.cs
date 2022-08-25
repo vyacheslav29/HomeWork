@@ -9,7 +9,7 @@ int[] createArray()
     var result = new int[4];
     for (long i = 0; i < result.Length; i++)
     {
-        result[i] = random.Next(-100, 100);
+        result[i] = random.Next(-10, 10);
     }
     return result;
 }
@@ -58,7 +58,7 @@ int pos = IndexOf(array, 1);
 int sum_Numbers(int[] array)
 {
     var result = 0;
-    for (long i = 0; i < array.Length; i = i + 2)
+    for (long i = 1; i < array.Length; i = i + 2)
     {
         result += array[i];
     }
